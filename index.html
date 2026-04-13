@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="neurallabs — Production-ready AI as a Service. Deploy LLMs, vision models, custom fine-tunes, and agents with zero infrastructure.">
+    <meta name="description" content="neurallabs — Production-ready AI as a Service. Deploy massive models instantly.">
     <title>neurallabs • AI as a Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
@@ -75,11 +75,10 @@
 
             <div class="hidden lg:flex items-center gap-x-9 text-sm font-medium">
                 <a href="#solutions" class="nav-link">Solutions</a>
-                <a href="#models" class="nav-link">Models</a>
+                <a href="models.html" class="nav-link">Models</a>
                 <a href="#how" class="nav-link">How it Works</a>
                 <a href="#pricing" class="nav-link">Pricing</a>
                 <a href="#about" class="nav-link">About</a>
-                <a href="#blog" class="nav-link">Blog</a>
             </div>
 
             <div class="flex items-center gap-x-4">
@@ -103,11 +102,10 @@
         <div id="mobile-menu" class="hidden lg:hidden bg-zinc-950 border-t border-white/10 px-8 py-6">
             <div class="flex flex-col gap-y-6 text-lg">
                 <a href="#solutions" onclick="toggleMobileMenu()" class="hover:text-cyan-400">Solutions</a>
-                <a href="#models" onclick="toggleMobileMenu()" class="hover:text-cyan-400">Models</a>
+                <a href="models.html" onclick="toggleMobileMenu()" class="hover:text-cyan-400">Models</a>
                 <a href="#how" onclick="toggleMobileMenu()" class="hover:text-cyan-400">How it Works</a>
                 <a href="#pricing" onclick="toggleMobileMenu()" class="hover:text-cyan-400">Pricing</a>
-                <a href="#about" onclick="toggleMobileMenu()" class="hover:text-cyan-400">About Us</a>
-                <a href="#blog" onclick="toggleMobileMenu()" class="hover:text-cyan-400">Blog</a>
+                <a href="#about" onclick="toggleMobileMenu()" class="hover:text-cyan-400">About</a>
                 <div class="pt-4 border-t border-white/10">
                     <a href="#contact" onclick="toggleMobileMenu()" 
                        class="block w-full text-center py-4 bg-cyan-400 text-zinc-950 font-semibold rounded-3xl">Get a Demo</a>
@@ -122,10 +120,6 @@
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="space-y-8">
                     <div class="inline-flex items-center gap-x-2 bg-white/10 text-cyan-400 text-sm font-medium px-5 py-2 rounded-3xl border border-cyan-400/30">
-                        <span class="relative flex h-3 w-3">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-3 w-3 bg-cyan-400"></span>
-                        </span>
                         PUBLIC BETA • $1,000 FREE CREDITS
                     </div>
 
@@ -163,7 +157,7 @@
                                     <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
                                     <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
                                 </div>
-                                <div class="mx-auto font-mono text-xs text-cyan-400">console.neurallabs.ai • flux-pro-v2</div>
+                                <div class="mx-auto font-mono text-xs text-cyan-400">console.neurallabs.ai</div>
                                 <i class="fa-solid fa-wifi text-emerald-400"></i>
                             </div>
                             
@@ -209,37 +203,22 @@
                 <div class="group bg-zinc-950 border border-white/10 hover:border-cyan-400/60 rounded-3xl p-10 transition-all">
                     <h3 class="text-3xl font-semibold mb-3">Vision & Generation</h3>
                     <p class="text-zinc-400 mb-6">Text-to-image, video, 3D, and real-time upscaling. Fine-tune on your dataset in minutes.</p>
-                    <div class="space-y-4 text-sm">
-                        <div class="flex justify-between"><span class="text-zinc-400">Flux • SD3 • Stable Video</span></div>
-                        <div class="flex justify-between"><span class="text-zinc-400">Custom LoRAs & ControlNets</span></div>
-                        <div class="flex justify-between"><span class="text-zinc-400">Enterprise-grade safety filters</span></div>
-                    </div>
                 </div>
                 
                 <div class="group bg-zinc-950 border border-white/10 hover:border-cyan-400/60 rounded-3xl p-10 transition-all">
                     <h3 class="text-3xl font-semibold mb-3">Language & Agents</h3>
                     <p class="text-zinc-400 mb-6">Largest open & closed models. RAG, function calling, multi-agent workflows — fully managed.</p>
-                    <div class="space-y-4 text-sm">
-                        <div class="flex justify-between"><span class="text-zinc-400">Llama 3.1 • Claude 3.5 • Grok-2</span></div>
-                        <div class="flex justify-between"><span class="text-zinc-400">Built-in vector + graph DB</span></div>
-                        <div class="flex justify-between"><span class="text-zinc-400">Autonomous agents ready in 1 click</span></div>
-                    </div>
                 </div>
                 
                 <div class="group bg-zinc-950 border border-white/10 hover:border-cyan-400/60 rounded-3xl p-10 transition-all">
                     <h3 class="text-3xl font-semibold mb-3">Custom & Multimodal</h3>
                     <p class="text-zinc-400 mb-6">Bring your own weights. Train, serve, and monitor any model — including the ones you build locally.</p>
-                    <div class="space-y-4 text-sm">
-                        <div class="flex justify-between"><span class="text-zinc-400">Private fine-tuning studio</span></div>
-                        <div class="flex justify-between"><span class="text-zinc-400">SOC 2 • HIPAA • GDPR ready</span></div>
-                        <div class="flex justify-between"><span class="text-zinc-400">On-prem / VPC deployment</span></div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- MODELS -->
+    <!-- MODELS TEASER -->
     <section id="models" class="py-24">
         <div class="max-w-screen-2xl mx-auto px-8">
             <div class="flex justify-between items-end mb-12">
@@ -247,31 +226,32 @@
                     <span class="section-header text-sm tracking-[2px]">PRODUCTION MODELS</span>
                     <h2 class="text-5xl heading-font font-semibold tracking-tight">Ship-ready models.<br>Instant access.</h2>
                 </div>
-                <a href="#" class="text-cyan-400 flex items-center gap-x-2 hover:gap-x-3 transition-all">Browse full catalog <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="models.html" 
+                   class="text-cyan-400 flex items-center gap-x-2 hover:gap-x-3 transition-all text-lg font-medium">
+                    Browse full catalog <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
-            
+           
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div class="bg-zinc-900 border border-white/10 rounded-3xl p-6 hover:scale-105 transition-transform">
                     <div class="font-semibold text-xl">Llama 3.1 405B</div>
                     <div class="text-emerald-400 text-xs">Best open model • 128k context</div>
-                    <div class="mt-8 text-xs bg-black px-3 py-1 rounded-2xl inline-block">TEXT • CODE • REASONING</div>
                 </div>
                 <div class="bg-zinc-900 border border-white/10 rounded-3xl p-6 hover:scale-105 transition-transform">
                     <div class="font-semibold text-xl">Flux.1 Pro</div>
                     <div class="text-emerald-400 text-xs">State-of-the-art image generation</div>
-                    <div class="mt-8 text-xs bg-black px-3 py-1 rounded-2xl inline-block">IMAGE • VIDEO</div>
                 </div>
                 <div class="bg-zinc-900 border border-white/10 rounded-3xl p-6 hover:scale-105 transition-transform">
                     <div class="font-semibold text-xl">Claude 3.5 Sonnet</div>
                     <div class="text-emerald-400 text-xs">Multimodal agentic model</div>
-                    <div class="mt-8 text-xs bg-black px-3 py-1 rounded-2xl inline-block">AGENTS • RAG</div>
                 </div>
                 <div class="bg-gradient-to-br from-cyan-400 to-purple-500 text-zinc-950 border border-white/10 rounded-3xl p-6 hover:scale-105 transition-transform">
                     <div class="font-semibold text-xl">Your Custom Model</div>
                     <div class="text-zinc-900 text-xs">Upload weights • Auto-scale</div>
-                    <div class="mt-8 text-xs bg-white/30 px-3 py-1 rounded-2xl inline-block">DEPLOY IN UNDER 60 SECONDS</div>
-                    <button onclick="alert('Demo: Your MNIST CNN would be live here!')" 
-                            class="mt-8 w-full bg-white text-zinc-950 py-3 rounded-2xl text-sm font-semibold">Deploy your model now</button>
+                    <button onclick="window.location.href='models.html'" 
+                            class="mt-8 w-full bg-white text-zinc-950 py-3 rounded-2xl text-sm font-semibold">
+                        View All Models
+                    </button>
                 </div>
             </div>
         </div>
@@ -535,6 +515,7 @@
                 </div>`
         }
 
+        // Smooth scrolling for internal links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 if (this.getAttribute('href') !== '#') {
