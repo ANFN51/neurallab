@@ -3,16 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NeuraLabs — Production-ready AI as a Service. Deploy LLMs, vision models, custom fine-tunes, and agents with zero infrastructure.">
-    <title>NeuraLabs • AI as a Service</title>
+    <meta name="description" content="neurallabs — Production-ready AI as a Service. Deploy LLMs, vision models, custom fine-tunes, and agents with zero infrastructure.">
+    <title>neurallabs • AI as a Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap');
-        
-        :root {
-            --tw-color-primary: #00d4ff;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
         
         body {
             font-family: 'Inter', system_ui, sans-serif;
@@ -72,13 +68,11 @@
     <!-- NAVBAR -->
     <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-zinc-950/90 backdrop-blur-xl">
         <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
-            <!-- Logo -->
             <div class="flex items-center gap-x-3">
-                <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-3xl flex items-center justify-center text-3xl font-bold heading-font shadow-inner">N</div>
-                <div class="text-3xl font-semibold tracking-[-1px] heading-font">NeuraLabs</div>
+                <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-3xl flex items-center justify-center text-3xl font-bold heading-font shadow-inner">n</div>
+                <div class="text-3xl font-semibold tracking-[-1px] heading-font">neurallabs</div>
             </div>
 
-            <!-- Desktop Menu -->
             <div class="hidden lg:flex items-center gap-x-9 text-sm font-medium">
                 <a href="#solutions" class="nav-link">Solutions</a>
                 <a href="#models" class="nav-link">Models</a>
@@ -93,14 +87,13 @@
                    class="hidden sm:flex items-center px-6 py-3 text-sm font-semibold border border-white/30 hover:border-cyan-400 rounded-3xl transition-all">
                     Talk to Sales
                 </a>
-                <a href="https://console.neuralabs.ai" target="_blank" rel="noopener"
+                <a href="https://console.neurallabs.ai" target="_blank" rel="noopener"
                    class="px-8 py-3 bg-white text-zinc-950 font-semibold rounded-3xl hover:scale-105 transition-transform flex items-center gap-x-2">
                     <i class="fa-solid fa-rocket"></i>
                     <span>Launch Console</span>
                 </a>
 
-                <!-- Mobile menu button -->
-                <button onclick="toggleMobileMenu()" class="lg:hidden text-2xl" title="Toggle mobile menu">
+                <button onclick="toggleMobileMenu()" class="lg:hidden text-2xl">
                     <i class="fa-solid fa-bars" id="mobile-icon"></i>
                 </button>
             </div>
@@ -147,7 +140,7 @@
 
                     <div class="flex flex-wrap gap-4">
                         <button onclick="document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })" 
-                                class="px-10 py-5 bg-white hover:bg-cyan-300 text-zinc-950 font-semibold text-xl rounded-3xl flex items-center gap-x-3 transition-all hover:shadow-2xl">
+                                class="px-10 py-5 bg-white hover:bg-cyan-300 text-zinc-950 font-semibold text-xl rounded-3xl flex items-center gap-x-3 transition-all">
                             <i class="fa-solid fa-play"></i>
                             Start for Free
                         </button>
@@ -158,64 +151,31 @@
                             38-second demo
                         </button>
                     </div>
-
-                    <div class="flex items-center gap-x-8 pt-4">
-                        <div class="flex -space-x-4">
-                            <div class="w-8 h-8 bg-zinc-800 rounded-2xl border-2 border-zinc-950 flex items-center justify-center text-xs">🧬</div>
-                            <div class="w-8 h-8 bg-zinc-800 rounded-2xl border-2 border-zinc-950 flex items-center justify-center text-xs">📸</div>
-                            <div class="w-8 h-8 bg-zinc-800 rounded-2xl border-2 border-zinc-950 flex items-center justify-center text-xs">🤖</div>
-                        </div>
-                        <div>
-                            <div class="text-emerald-400 font-medium">Trusted by 4,872 builders</div>
-                            <div class="text-zinc-400 text-sm">including teams from OpenAI, Hugging Face &amp; NVIDIA</div>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Hero Visual -->
                 <div class="relative lg:mt-0 mt-12">
                     <div class="bg-gradient-to-br from-cyan-400/10 to-purple-500/10 p-3 rounded-[2.75rem] shadow-2xl border border-white/10">
                         <div class="bg-zinc-900 rounded-3xl overflow-hidden">
-                            <!-- Fake console header -->
                             <div class="h-14 bg-black flex items-center px-6 gap-x-3">
                                 <div class="flex gap-x-1.5">
                                     <div class="w-3 h-3 rounded-full bg-red-500"></div>
                                     <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
                                     <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
                                 </div>
-                                <div class="mx-auto font-mono text-xs text-cyan-400">console.neuralabs.ai • flux-pro-v2</div>
+                                <div class="mx-auto font-mono text-xs text-cyan-400">console.neurallabs.ai • flux-pro-v2</div>
                                 <i class="fa-solid fa-wifi text-emerald-400"></i>
                             </div>
                             
-                            <!-- Demo content -->
                             <div class="aspect-video bg-black flex flex-col items-center justify-center p-8 relative">
-                                <div class="text-7xl mb-6 animate-bounce">🧠</div>
                                 <p class="text-cyan-400 text-2xl font-medium text-center max-w-xs">
                                     Generating "futuristic Detroit skyline at golden hour"...
                                 </p>
                                 <div class="mt-10 w-full max-w-md h-2 bg-zinc-800 rounded-full overflow-hidden">
                                     <div class="h-full w-11/12 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full animate-[progress_1.8s_linear_infinite]"></div>
                                 </div>
-                                <div class="absolute bottom-8 text-xs font-mono text-zinc-500 flex items-center gap-x-2">
-                                    <i class="fa-solid fa-bolt"></i>
-                                    0.8s • 4.2s remaining
-                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <!-- Floating badges -->
-                    <div class="absolute -top-6 -left-6 bg-zinc-900 border border-cyan-400/30 rounded-3xl px-6 py-4 shadow-2xl flex items-center gap-x-4">
-                        <div class="text-4xl">⚡</div>
-                        <div>
-                            <div class="font-semibold">99.98% uptime</div>
-                            <div class="text-xs text-emerald-400">This month</div>
-                        </div>
-                    </div>
-                    
-                    <div class="absolute -bottom-4 right-8 bg-zinc-900 border border-purple-400/30 rounded-3xl px-5 py-3 shadow-2xl text-sm flex items-center gap-x-2">
-                        <i class="fa-solid fa-check-circle text-purple-400"></i>
-                        <span>Model deployed in <strong class="text-purple-400">4.2 seconds</strong></span>
                     </div>
                 </div>
             </div>
@@ -247,33 +207,30 @@
             
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="group bg-zinc-950 border border-white/10 hover:border-cyan-400/60 rounded-3xl p-10 transition-all">
-                    <div class="text-6xl mb-8">📸</div>
-                    <h3 class="text-3xl font-semibold mb-3">Vision &amp; Generation</h3>
+                    <h3 class="text-3xl font-semibold mb-3">Vision & Generation</h3>
                     <p class="text-zinc-400 mb-6">Text-to-image, video, 3D, and real-time upscaling. Fine-tune on your dataset in minutes.</p>
                     <div class="space-y-4 text-sm">
-                        <div class="flex justify-between"><span class="text-zinc-400">Flux • SD3 • Stable Video</span><i class="fa-solid fa-arrow-right text-cyan-400 group-hover:translate-x-1 transition"></i></div>
-                        <div class="flex justify-between"><span class="text-zinc-400">Custom LoRAs &amp; ControlNets</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">Flux • SD3 • Stable Video</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">Custom LoRAs & ControlNets</span></div>
                         <div class="flex justify-between"><span class="text-zinc-400">Enterprise-grade safety filters</span></div>
                     </div>
                 </div>
                 
                 <div class="group bg-zinc-950 border border-white/10 hover:border-cyan-400/60 rounded-3xl p-10 transition-all">
-                    <div class="text-6xl mb-8">💬</div>
-                    <h3 class="text-3xl font-semibold mb-3">Language &amp; Agents</h3>
-                    <p class="text-zinc-400 mb-6">Largest open &amp; closed models. RAG, function calling, multi-agent workflows — fully managed.</p>
+                    <h3 class="text-3xl font-semibold mb-3">Language & Agents</h3>
+                    <p class="text-zinc-400 mb-6">Largest open & closed models. RAG, function calling, multi-agent workflows — fully managed.</p>
                     <div class="space-y-4 text-sm">
-                        <div class="flex justify-between"><span class="text-zinc-400">Llama 3.1 • Claude 3.5 • Grok-2</span><i class="fa-solid fa-arrow-right text-cyan-400 group-hover:translate-x-1 transition"></i></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">Llama 3.1 • Claude 3.5 • Grok-2</span></div>
                         <div class="flex justify-between"><span class="text-zinc-400">Built-in vector + graph DB</span></div>
                         <div class="flex justify-between"><span class="text-zinc-400">Autonomous agents ready in 1 click</span></div>
                     </div>
                 </div>
                 
                 <div class="group bg-zinc-950 border border-white/10 hover:border-cyan-400/60 rounded-3xl p-10 transition-all">
-                    <div class="text-6xl mb-8">🔬</div>
-                    <h3 class="text-3xl font-semibold mb-3">Custom &amp; Multimodal</h3>
+                    <h3 class="text-3xl font-semibold mb-3">Custom & Multimodal</h3>
                     <p class="text-zinc-400 mb-6">Bring your own weights. Train, serve, and monitor any model — including the ones you build locally.</p>
                     <div class="space-y-4 text-sm">
-                        <div class="flex justify-between"><span class="text-zinc-400">Private fine-tuning studio</span><i class="fa-solid fa-arrow-right text-cyan-400 group-hover:translate-x-1 transition"></i></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">Private fine-tuning studio</span></div>
                         <div class="flex justify-between"><span class="text-zinc-400">SOC 2 • HIPAA • GDPR ready</span></div>
                         <div class="flex justify-between"><span class="text-zinc-400">On-prem / VPC deployment</span></div>
                     </div>
@@ -295,30 +252,26 @@
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div class="bg-zinc-900 border border-white/10 rounded-3xl p-6 hover:scale-105 transition-transform">
-                    <div class="text-4xl mb-4">🦙</div>
                     <div class="font-semibold text-xl">Llama 3.1 405B</div>
                     <div class="text-emerald-400 text-xs">Best open model • 128k context</div>
                     <div class="mt-8 text-xs bg-black px-3 py-1 rounded-2xl inline-block">TEXT • CODE • REASONING</div>
                 </div>
                 <div class="bg-zinc-900 border border-white/10 rounded-3xl p-6 hover:scale-105 transition-transform">
-                    <div class="text-4xl mb-4">📸</div>
                     <div class="font-semibold text-xl">Flux.1 Pro</div>
-                    <div class="text-emerald-400 text-xs">State-of-the-art image gen</div>
+                    <div class="text-emerald-400 text-xs">State-of-the-art image generation</div>
                     <div class="mt-8 text-xs bg-black px-3 py-1 rounded-2xl inline-block">IMAGE • VIDEO</div>
                 </div>
                 <div class="bg-zinc-900 border border-white/10 rounded-3xl p-6 hover:scale-105 transition-transform">
-                    <div class="text-4xl mb-4">🤖</div>
                     <div class="font-semibold text-xl">Claude 3.5 Sonnet</div>
                     <div class="text-emerald-400 text-xs">Multimodal agentic model</div>
                     <div class="mt-8 text-xs bg-black px-3 py-1 rounded-2xl inline-block">AGENTS • RAG</div>
                 </div>
                 <div class="bg-gradient-to-br from-cyan-400 to-purple-500 text-zinc-950 border border-white/10 rounded-3xl p-6 hover:scale-105 transition-transform">
-                    <div class="text-4xl mb-4">🔥</div>
                     <div class="font-semibold text-xl">Your Custom Model</div>
                     <div class="text-zinc-900 text-xs">Upload weights • Auto-scale</div>
-                    <div class="mt-8 text-xs bg-white/30 px-3 py-1 rounded-2xl inline-block">DEPLOY IN &lt;60s</div>
+                    <div class="mt-8 text-xs bg-white/30 px-3 py-1 rounded-2xl inline-block">DEPLOY IN UNDER 60 SECONDS</div>
                     <button onclick="alert('Demo: Your MNIST CNN would be live here!')" 
-                            class="mt-8 w-full bg-white text-zinc-950 py-3 rounded-2xl text-sm font-semibold">Deploy your model now →</button>
+                            class="mt-8 w-full bg-white text-zinc-950 py-3 rounded-2xl text-sm font-semibold">Deploy your model now</button>
                 </div>
             </div>
         </div>
@@ -331,22 +284,22 @@
                 <div class="md:col-span-5">
                     <span class="section-header">3 STEPS. 60 SECONDS.</span>
                     <h2 class="text-5xl heading-font font-semibold tracking-tight mt-3">From idea to production AI with zero DevOps.</h2>
-                    <p class="mt-6 text-zinc-400 text-lg">Whether you're a solo builder or a 500-person team, NeuraLabs handles the hard parts.</p>
+                    <p class="mt-6 text-zinc-400 text-lg">Whether you're a solo builder or a 500-person team, neurallabs handles the hard parts.</p>
                 </div>
                 
                 <div class="md:col-span-7 grid md:grid-cols-3 gap-8">
                     <div class="text-center">
-                        <div class="mx-auto w-16 h-16 bg-cyan-400 text-zinc-950 rounded-2xl flex items-center justify-center text-4xl mb-6">1</div>
+                        <div class="mx-auto w-16 h-16 bg-cyan-400 text-zinc-950 rounded-2xl flex items-center justify-center text-4xl mb-6 font-bold">1</div>
                         <h4 class="font-semibold text-2xl">Choose or upload</h4>
                         <p class="text-zinc-400 mt-3">Pick from 120+ pre-trained models or drag-and-drop your own .pth / .onnx / .gguf file.</p>
                     </div>
                     <div class="text-center">
-                        <div class="mx-auto w-16 h-16 bg-cyan-400 text-zinc-950 rounded-2xl flex items-center justify-center text-4xl mb-6">2</div>
+                        <div class="mx-auto w-16 h-16 bg-cyan-400 text-zinc-950 rounded-2xl flex items-center justify-center text-4xl mb-6 font-bold">2</div>
                         <h4 class="font-semibold text-2xl">Configure once</h4>
                         <p class="text-zinc-400 mt-3">Set temperature, safety filters, RAG sources, or auto-scaling rules in our visual editor.</p>
                     </div>
                     <div class="text-center">
-                        <div class="mx-auto w-16 h-16 bg-cyan-400 text-zinc-950 rounded-2xl flex items-center justify-center text-4xl mb-6">3</div>
+                        <div class="mx-auto w-16 h-16 bg-cyan-400 text-zinc-950 rounded-2xl flex items-center justify-center text-4xl mb-6 font-bold">3</div>
                         <h4 class="font-semibold text-2xl">Ship instantly</h4>
                         <p class="text-zinc-400 mt-3">Get a REST + WebSocket endpoint. Monitor usage, cost, and latency in real time.</p>
                     </div>
@@ -364,7 +317,6 @@
             </div>
 
             <div class="grid md:grid-cols-12 gap-8 max-w-7xl mx-auto">
-                <!-- Starter -->
                 <div class="md:col-span-4 bg-zinc-900 rounded-3xl p-8">
                     <div class="uppercase text-emerald-400 text-sm font-medium">Starter</div>
                     <div class="mt-2 text-6xl font-semibold">$0</div>
@@ -375,11 +327,10 @@
                         <li class="flex items-start gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> Community Slack support</li>
                         <li class="flex items-start gap-x-3 text-zinc-400"><i class="fa-solid fa-check mt-1"></i> No credit card needed</li>
                     </ul>
-                    <button onclick="alert('✅ Free tier activated! (demo)')" 
+                    <button onclick="alert('Free tier activated! (demo)')" 
                             class="mt-12 w-full py-6 bg-white text-zinc-950 font-semibold rounded-3xl">Start free today</button>
                 </div>
 
-                <!-- Pro (popular) -->
                 <div class="md:col-span-4 bg-gradient-to-b from-cyan-400 to-purple-500 text-zinc-950 rounded-3xl p-8 relative scale-[1.04] shadow-2xl">
                     <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-xs font-bold px-8 py-2 rounded-3xl">MOST POPULAR</div>
                     <div class="uppercase text-zinc-900 text-sm font-medium">Pro</div>
@@ -392,11 +343,10 @@
                         <li class="flex items-start gap-x-3"><i class="fa-solid fa-check mt-1"></i> Priority GPU queue</li>
                         <li class="flex items-start gap-x-3"><i class="fa-solid fa-check mt-1"></i> Email + Slack priority support</li>
                     </ul>
-                    <button onclick="alert('✅ Redirecting to secure checkout… (demo)')" 
+                    <button onclick="alert('Redirecting to secure checkout… (demo)')" 
                             class="mt-12 w-full py-6 bg-white/90 hover:bg-white text-zinc-950 font-semibold rounded-3xl">Upgrade to Pro</button>
                 </div>
 
-                <!-- Enterprise -->
                 <div class="md:col-span-4 bg-zinc-900 rounded-3xl p-8">
                     <div class="uppercase text-amber-400 text-sm font-medium">Enterprise</div>
                     <div class="mt-2 text-6xl font-semibold">Custom</div>
@@ -422,22 +372,8 @@
                     <h2 class="text-5xl heading-font font-semibold tracking-tight">Built by engineers who hated managing GPUs.</h2>
                     <p class="mt-8 text-lg text-zinc-400">
                         We spent years training models locally, renting expensive cloud instances, and debugging CUDA errors. 
-                        NeuraLabs was born so you never have to.
+                        neurallabs was born so you never have to.
                     </p>
-                    <div class="mt-12 flex items-center gap-x-8">
-                        <div>
-                            <div class="text-5xl font-semibold">4.2s</div>
-                            <div class="text-sm text-zinc-400">average time to first token</div>
-                        </div>
-                        <div>
-                            <div class="text-5xl font-semibold">12.4M</div>
-                            <div class="text-sm text-zinc-400">API calls today</div>
-                        </div>
-                        <div>
-                            <div class="text-5xl font-semibold">∞</div>
-                            <div class="text-sm text-zinc-400">models you can deploy</div>
-                        </div>
-                    </div>
                 </div>
                 <div class="lg:col-span-7 text-zinc-400 text-lg leading-relaxed">
                     We are a small team of data scientists and infrastructure engineers obsessed with making AI accessible. 
@@ -448,7 +384,7 @@
         </div>
     </section>
 
-    <!-- TESTIMONIALS / BLOG TEASER -->
+    <!-- TESTIMONIALS -->
     <section id="blog" class="py-24">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl heading-font font-semibold text-center mb-16">Real builders. Real results.</h2>
@@ -480,7 +416,7 @@
                         <div class="w-9 h-9 bg-cyan-400 rounded-2xl"></div>
                         <div>
                             <div class="font-medium">Jordan Patel</div>
-                            <div class="text-xs text-zinc-400">Indie Hacker • Built with NeuraLabs</div>
+                            <div class="text-xs text-zinc-400">Indie Hacker • Built with neurallabs</div>
                         </div>
                     </div>
                 </div>
@@ -506,8 +442,6 @@
                         Get my free API key
                     </button>
                 </form>
-                
-                <p class="text-xs text-zinc-500 mt-6">We reply in &lt; 2 hours during business hours • No spam ever</p>
             </div>
         </div>
     </section>
@@ -518,11 +452,11 @@
             <div class="flex flex-col lg:flex-row justify-between items-start gap-y-12">
                 <div>
                     <div class="flex items-center gap-x-3 mb-6">
-                        <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-3xl flex items-center justify-center text-3xl font-bold heading-font">N</div>
-                        <div class="text-3xl font-semibold tracking-[-1px] heading-font">NeuraLabs</div>
+                        <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-3xl flex items-center justify-center text-3xl font-bold heading-font">n</div>
+                        <div class="text-3xl font-semibold tracking-[-1px] heading-font">neurallabs</div>
                     </div>
                     <p class="text-zinc-400 max-w-xs">AI infrastructure engineered for speed and simplicity.</p>
-                    <div class="text-xs text-zinc-500 mt-8">© 2026 NeuraLabs, Inc. All rights reserved.</div>
+                    <div class="text-xs text-zinc-500 mt-8">© 2026 neurallabs, Inc. All rights reserved.</div>
                 </div>
                 
                 <div class="grid grid-cols-3 gap-x-16">
@@ -556,19 +490,13 @@
                 </div>
                 
                 <div class="lg:text-right">
-                    <div class="text-cyan-400 text-sm font-medium">Made with ❤️ for the next generation of AI builders</div>
-                    <div class="mt-8 flex gap-x-6 text-2xl">
-                        <i class="fa-brands fa-x-twitter cursor-pointer hover:text-cyan-400"></i>
-                        <i class="fa-brands fa-discord cursor-pointer hover:text-cyan-400"></i>
-                        <i class="fa-brands fa-github cursor-pointer hover:text-cyan-400"></i>
-                    </div>
+                    <div class="text-cyan-400 text-sm font-medium">Made for the next generation of AI builders</div>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Tailwind script already loaded via CDN
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu')
             const icon = document.getElementById('mobile-icon')
@@ -601,14 +529,12 @@
             const form = document.getElementById('contact-form')
             form.innerHTML = `
                 <div class="text-center py-12">
-                    <i class="fa-solid fa-check-circle text-6xl text-emerald-400 mb-6"></i>
                     <h3 class="text-3xl font-semibold">You're in!</h3>
                     <p class="text-zinc-400 mt-4">Your free API key has been sent to your email.<br>Start building immediately.</p>
-                    <button onclick="location.reload()" class="mt-8 px-8 py-4 bg-cyan-400 text-black font-semibold rounded-3xl">Go to Console →</button>
+                    <button onclick="location.reload()" class="mt-8 px-8 py-4 bg-cyan-400 text-black font-semibold rounded-3xl">Go to Console</button>
                 </div>`
         }
 
-        // Smooth scrolling for nav links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 if (this.getAttribute('href') !== '#') {
@@ -619,7 +545,7 @@
             })
         })
 
-        console.log('%c🚀 Full NeuraLabs AI-as-a-Service website loaded successfully!', 'color:#00d4ff; font-size:13px; font-weight:bold')
+        console.log('%cneurallabs AI-as-a-Service website loaded successfully', 'color:#00d4ff; font-weight:bold')
     </script>
 </body>
 </html>
